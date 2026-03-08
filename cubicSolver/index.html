@@ -12,17 +12,23 @@
   <div id="app"></div>
   
   <h1>Cubic Solver</h1>
-  <form class="ui-elements">
+  <form class="ui-elements" id="form">
     <label>a-value:</label>
     <label>b-value:</label>
     <label>c-value:</label>
     <label>d-value:</label>
-    <input type="number" class="inputs">
-    <input type="number" class="inputs">
-    <input type="number" class="inputs">
-    <input type="number" class="inputs">
-    <button>Solve Cubic</button>
+    <input type="number" class="inputs" id="a" name="a">
+    <input type="number" class="inputs" id="b" name="b">
+    <input type="number" class="inputs" id="c" name="c">
+    <input type="number" class="inputs" id="d" name="d">
+    <input type="submit" class="button" value="calculate" name="submit" onclick="plotCubicEquation()">
+    <input type="text" id="result" name="result">
   </form>
+
+  <canvas id="graph" width="600" height="400"></canvas>
+
+  <script src="/src/cubicSolver.ts" type="module"></script>
+  <script src="/src/canvas.js"></script>
 </body>
 
 </html>
