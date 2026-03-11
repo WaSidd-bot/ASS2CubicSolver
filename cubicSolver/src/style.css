@@ -46,3 +46,19 @@ h1{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#graph {
+  background-color: rgb(153, 201, 148);
+  padding: 10px;
+  border-radius: 50px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  position: absolute;
+  left: 45%;
+}
+
+table {
+  margin-top: 100px;
+  border-width: 10px;
+  position: absolute;
+  right: 65%;
+}
